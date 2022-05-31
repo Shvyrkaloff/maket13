@@ -1,0 +1,78 @@
+﻿<Window x:Class="maket13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:maket13"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grid1">
+        <Grid.Background>
+            <ImageBrush ImageSource="https://i.pinimg.com/originals/82/7b/70/827b700b4c9861ea748858e164cd4676.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="125*"/>
+
+        </Grid.RowDefinitions>
+        <Border x:Name="border1" Grid.Row="0" Margin="30,30,30,15" Background="Silver" BorderBrush="Black" BorderThickness="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel Grid.Row="0" Margin="30,0,30,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <ToolBar x:Name="tool" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Visible" Margin="0,5,0,0" Background="Silver" Height="40" Header="Tool&#xD;&#xA;">
+                    <Button Content="Каталог товаров" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" />
+                    <Button Content="Каталог услуг" VerticalAlignment="Top" Click="Button_Click_1" />
+                    <Button Content="О нас" VerticalAlignment="Top" Click="Button_Click_2"/>
+                    <Button Content="Как нас найти" VerticalAlignment="Top" Click="Button_Click_3" />
+                    <RadioButton Content="Серый фон" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                    <RadioButton Content="Белый фон" VerticalAlignment="Bottom" HorizontalAlignment="Left" Checked="RadioButton_Checked_1" Margin="0,0,0,13"/>
+                </ToolBar>
+            </StackPanel>
+        </Border>
+        <Border x:Name="border3" Grid.Row="1" Margin="30,0,30,15" Background="Silver" BorderBrush="Black" BorderThickness="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid  VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*" />
+                        <ColumnDefinition Width="27*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="text1" Grid.Column="1" HorizontalAlignment="Stretch" Margin="20,0,0,0" TextWrapping="Wrap" Text="Проверка состояния электрических соединений и разъемов. Проверка состояния и исправности элементов световой и звуковой сигнализации.  Проверка состояния и надежности крепления датчиков системы автоматики и управления. Проверка настройки управляющих устройств. Проверка исправности и правильности работы управляющих устройств.  роверка настройки и срабатывания защитных и предохранительных устройств." VerticalAlignment="Stretch"/>
+                    <Image Grid.Column="0" Source="https://i.pinimg.com/564x/de/33/9e/de339eb6444be1959563b1e809ae206b.jpg" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both"  RenderTransformOrigin="0.518,0.489"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+        <Border x:Name="border4" Grid.Row="2" Margin="30,0,30,15" Background="Silver" BorderBrush="Black" BorderThickness="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid  VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*" />
+                        <ColumnDefinition Width="27*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="text2" Grid.Column="1" HorizontalAlignment="Stretch" Margin="20,0,0,0" TextWrapping="Wrap" Text="Замена двигателя в автомобиле представляет собой достаточно сложный технологический процесс, который различается в зависимости от типа двигателя. Кроме того, если мы меняем двигатель, это требует переоформления автомобиля и внесения правок в документы." VerticalAlignment="Stretch"/>
+                    <Image Grid.Column="0" Source="https://i.pinimg.com/564x/64/c9/34/64c934049f31309d3725a0bc5b37bdda.jpg" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" Margin="9,0,9,10" />
+                </Grid>
+            </StackPanel>
+        </Border>
+        <Border x:Name="border2" Grid.Row="3" Margin="30,0,30,15" Background="Silver" BorderBrush="Black" BorderThickness="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid  VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*" />
+                        <ColumnDefinition Width="27*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="text3" Grid.Column="1" HorizontalAlignment="Stretch" Margin="20,0,0,0" TextWrapping="Wrap" Text="Перед установкой турбины важно помнить, что в процессе монтажа нельзя использовать герметики. При воздействии высоких температур они разжижаются, а их частицы могут попасть внутрь турбины. Небольшого кусочка достаточно для полного уничтожения устройства." VerticalAlignment="Stretch"/>
+                    <Image Grid.Column="0" Source="https://i.pinimg.com/564x/28/49/56/284956a0b7991578960ee55abd971286.jpg" VerticalAlignment="Stretch" Stretch="Fill" HorizontalAlignment="Stretch" StretchDirection="Both" />
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
